@@ -1,0 +1,37 @@
+authentication mac-move permit
+!
+aaa authentication dot1x default group radius
+aaa authorization network default group radius
+aaa accounting dot1x default start-stop group radius
+dot1x system-auth-control
+!
+radius-server attribute 6 on-for-login-auth
+radius-server attribute 8 include-in-access-req
+!
+radius-server vsa send accounting
+radius-server vsa send authentication
+!
+device-sensor accounting
+device-sensor notify all-changes
+!
+{% for i in host["access_ports"] %}
+interface {{i['interface']}}
+authentication event fail action next-method
+authentication event server dead action authorize
+authentication event server dead action authorize voice
+authentication event server alive action reinitialize
+authentication host-mode multi-domain
+authentication open
+authentication order dot1x mab
+authentication priority dot1x mab
+authentication port-control auto
+authentication periodic
+authentication timer reauthenticate server
+authentication violation replace
+mab
+dot1x pae authenticator
+dot1x timeout tx-period 8
+spanning-tree portfast
+!
+{% endfor %}
+!
