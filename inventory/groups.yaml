@@ -1,0 +1,8 @@
+---
+afg:
+  groups:
+    - 'main'
+
+a1t4:
+  groups:
+    - 'afg'
