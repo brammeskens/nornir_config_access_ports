@@ -1,8 +1,17 @@
-# Sample GitLab Project
+# Nornir config access ports
+## Dependencies
 
-This sample project shows how a project in GitLab looks for demonstration purposes. It contains issues, merge requests and Markdown files in many branches,
-named and filled with lorem ipsum.
+    pip3 install nornir
+    pip3 install nornir_utils
+    pip3 install nornir_jinja2
+    pip3 install nornir_netmiko
 
-You can look around to get an idea how to structure your project and, when done, you can safely delete this project.
+    pip3 install rich
+    pip3 install getpass
 
-[Learn more about creating GitLab projects.](https://docs.gitlab.com/ee/gitlab-basics/create-project.html)
+## Overview
+This script is built in Nornir3 and it's various plugins. For ease of use and readability, getpass and rich were also incorporated.
+
+
+## How to Use
+**Note:** General usage of Nornir is required. Please see [nornir.tech](https://nornir.tech) or [nornir-automation](https://github.com/nornir-automation/nornir/)
