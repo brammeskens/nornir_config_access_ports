@@ -44,7 +44,7 @@ def push_config(task):
     )
 
 def main():
-    os.environ["NET_TEXTFSM"] = "../ntc-templates/templates"
+    os.environ["NET_TEXTFSM"] = "ntc-templates/templates"
     nr = InitNornir(config_file="config.yaml")
 
     nr.inventory.defaults.password = getpass.getpass()
