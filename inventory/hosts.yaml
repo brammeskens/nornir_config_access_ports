@@ -1,0 +1,13 @@
+---
+AS1:
+  hostname: 10.10.10.1
+  groups:
+    - 'a1t4'
+  data:
+    role: 'access'
+AS2:
+  hostname: 10.10.10.2
+  groups:
+    - 'a1t4'
+  data:
+    role: 'access'
