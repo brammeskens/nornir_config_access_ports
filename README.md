@@ -52,7 +52,7 @@ spanning-tree portfast
 !
 {% endfor %}
 ```
-Your custom access port configuration should be inserted between _interface {{i['interface']}}_ and _!_.
+Your custom access port configuration should be inserted between interface `{{i['interface']}}` and `!`.
 
 **Step 3**
 You should be ready to run the script now. If you feel uncertain about the _push_config_ task, we advise you to comment out lines _68_ and _69_ before you run the script.
