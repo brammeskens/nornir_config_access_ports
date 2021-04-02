@@ -98,4 +98,4 @@ generate_config
 push_config
 ```
 
-As always, test your changes to a demo host in a lab environment before actually using it in a production environment.
+As always, **test** your changes to a demo host in a lab environment **before** actually using it in a production environment.
