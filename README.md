@@ -16,7 +16,7 @@ This script is built around Nornir 3.0 and its various plugins. For ease of use 
 - generate_config
 - push_config
 
-For each host we will gather all switchports and filter only the access ports. Once the ports are gathered, we will generate configuration for the host device based on the jinja2 template. The jinja2 template conists of general host configuration and interface configuration. Last but not least, we push the generated configuration to the hosts. 
+For each host we will gather all switchports and filter only the access ports. Once the ports are gathered, we will generate configuration for the host device based on the jinja2 template. The jinja2 template consists of general host configuration and interface configuration. Last but not least, we push the generated configuration to the hosts. 
 
 ## How to Use
 **Note:** Using the [ntc-templates](https://github.com/networktocode/ntc-templates) through PyPI never worked out for me. To ease the set-up I have copied the ntc_templates folder directly in the same destination folder. The corresponding code can be found at line _52_. You may have better luck than me by using the PyPI-version.
