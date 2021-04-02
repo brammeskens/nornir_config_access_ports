@@ -1,0 +1,7 @@
+nornir
+nornir_utils
+nornir_jinja2
+nornir_netmiko
+rich
+getpass
+ntc-templates
