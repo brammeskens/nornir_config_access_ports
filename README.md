@@ -18,6 +18,22 @@ This script is built around Nornir 3.0 and its various plugins. For ease of use 
 
 For each host we will gather all switchports and filter only the access ports. Once the ports are gathered, we will generate configuration for the host device based on the jinja2 template. The jinja2 template consists of general host configuration and interface configuration. Last but not least, we push the generated configuration to the hosts. 
 
+## Related Sandbox
+Related DevNet Sandbox:
+[IOS XE on Catalyst 9000](https://devnetsandbox.cisco.com/RM/Diagram/Index/98d5a0fb-1b92-4b5b-abf6-a91e0ddba241?diagramType=Topology)
+
+## Links to DevNet Learning Labs
+Python introduction Learning Labs:
+[Intro Python: Part 1](https://developer.cisco.com/learning/lab/intro-python-part1/step/1)
+[Intro Python - Part 2](https://developer.cisco.com/learning/lab/intro-python-part2/step/1)
+Get to know jinja2 templating:
+[NAPALM with Templates](https://developer.cisco.com/learning/lab/napalm_with_templates/step/1)
+
+## Solutions on Ecosystem Exchange
+Related solutions on DevNet Ecosystem Exchange:
+[Nornir 3 Filtering Demo](https://developer.cisco.com/codeexchange/github/repo/writememe/nornir-filtering-demo)
+[Nornir3_802.1x_configuration](https://github.com/nouse4it/Nornir3_802.1x_configuration)
+
 ## How to Use
 **Note:** Using the [ntc-templates](https://github.com/networktocode/ntc-templates) through PyPI never worked out for me. To ease the set-up I have copied the ntc_templates folder directly in the same destination folder. The corresponding code can be found at line _52_. You may have better luck than me by using the PyPI-version.
 
